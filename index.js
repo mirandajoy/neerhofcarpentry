@@ -10,6 +10,7 @@ const TO_EMAIL = 'rchrdschfr@gmail.com'
 app.use(bodyParser.json())
 app.use(express.static(path.join(__dirname, 'public')));
 app.post('/send-email', function(req, res) {
+  console.log(req.body)
   const { from, name, message } = req.body
 
   const fromEmail = new sendGridHelper.Email(from)
@@ -24,6 +25,7 @@ app.post('/send-email', function(req, res) {
     if (error) {
       console.log('Error response received')
     }
+    console.log(response);
     res.status(200).send();
   })
 })
