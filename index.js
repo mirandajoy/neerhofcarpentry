@@ -27,12 +27,8 @@ app.post('/send-email', function(req, res) {
     if (error) {
       console.log('Error response received')
     }
-    console.log(response.statusCode)
-    console.log(response.body)
-    console.log(response.headers)
+    res.status(200).send();
   })
-
-  res.status(200).send();
 })
 
 app.listen(process.env.PORT, function () {
