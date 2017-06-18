@@ -7,7 +7,7 @@ const bodyParser = require('body-parser')
 const TO_EMAIL = 'miranda_neerhof@hotmail.com'
 
 app.use(bodyParser.json())
-app.use('/', express.static('/public'))
+app.use('/', express.static('public'))
 app.post('/send-email', function(req, res) {
   const { from, name, message } = req.body
 
