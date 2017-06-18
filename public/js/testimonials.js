@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   resetTimeout();
 
   function goToNextTestimonial() {
+    debugger
     document.getElementById('testimonial-' + currentTestimonial).style.display = 'none';
     document.getElementById('testimonial-' + currentTestimonial + 1).style.display = 'block';
     currentTestimonial++;
