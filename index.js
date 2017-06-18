@@ -8,6 +8,7 @@ const bodyParser = require('body-parser')
 const TO_EMAIL = 'rchrdschfr@gmail.com'
 
 app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')));
 app.post('/send-email', function(req, res) {
   console.log(req.body)
