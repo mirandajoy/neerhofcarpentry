@@ -10,5 +10,7 @@
     "express": "^4.15.3",
     "sendgrid": "^5.1.1"
   },
-  "start": "node index.js"
+  "scripts": {
+    "start": "node index.js"
+  }
 }
