@@ -33,6 +33,6 @@ app.post('/send-email', function(req, res) {
   })
 })
 
-app.listen(app.get('port'), function () {
+app.listen(process.env.PORT, function () {
   console.log('Listening on port 3000!')
 })
