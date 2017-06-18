@@ -9,7 +9,7 @@ const TO_EMAIL = 'miranda_neerhof@hotmail.com'
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')))
 app.post('/send-email', function(req, res) {
   const { from, name, message } = req.body
 
@@ -23,9 +23,9 @@ app.post('/send-email', function(req, res) {
     method: 'POST', path: '/v3/mail/send', body: mail.toJSON()
   }), function (error, response) {
     if (error) {
-      res.status(400).send();
+      res.status(400).send()
     } else {
-      res.status(200).send();
+      res.status(200).send()
     }
   })
 })
