@@ -5,7 +5,7 @@ const sendGrid = require('sendgrid')(process.env.SENDGRID_API_KEY)
 const sendGridHelper = require('sendgrid').mail;
 const bodyParser = require('body-parser')
 
-const TO_EMAIL = 'rchrdschfr@gmail.com'
+const TO_EMAIL = 'miranda_neerhof@hotmail.com'
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
