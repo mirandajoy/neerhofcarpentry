@@ -5,13 +5,10 @@ const sendGrid = require('sendgrid')(process.env.SENDGRID_API_KEY)
 const sendGridHelper = require('sendgrid').mail;
 const bodyParser = require('body-parser')
 
-const TO_EMAIL = 'miranda_neerhof@hotmail.com'
+const TO_EMAIL = 'rchrdschfr@gmail.com'
 
 app.use(bodyParser.json())
 app.use(express.static(path.join(__dirname, 'public')));
-//app.get('', function (request, response){
-//  response.sendFile(path.resolve(__dirname, 'public', 'index.html'));
-//});
 app.post('/send-email', function(req, res) {
   const { from, name, message } = req.body
 
