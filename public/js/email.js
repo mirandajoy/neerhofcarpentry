@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
       from: document.getElementById('form2').value,
       message: document.getElementById('form3').value,
     });
+    debugger
     xhr.onreadystatechange = function () {
       if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
         document.getElementById('form1').value = '';
