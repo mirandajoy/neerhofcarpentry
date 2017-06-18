@@ -1,5 +1,4 @@
-(function () {
-	'use strict';
+document.addEventListener('DOMContentLoaded', function() {
 	var slides = document.querySelectorAll('.testimonial-item'),
 		 button = document.getElementById('button'),
 		 arrows = document.querySelectorAll('.lnr'),
@@ -57,4 +56,4 @@
 	// set timing of dispatch click events
 	scrollInterval = setInterval(autoScroll, interval);
 
-})();
+});
