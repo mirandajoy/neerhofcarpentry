@@ -36,8 +36,8 @@
   color: #fff;
 }
 .testimonial-carousel p {
-  font-family: 'Bad Script', cursive;
-  font-size: 1em;
+  /*font-family: 'Bad Script', cursive;
+  font-size: 1em;*/
 }
 @media (min-width: 768px) {
   .testimonial-carousel p {
