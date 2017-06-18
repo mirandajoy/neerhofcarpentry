@@ -31,6 +31,8 @@ app.post('/send-email', function(req, res) {
     console.log(response.body)
     console.log(response.headers)
   })
+
+  res.status(200).send();
 })
 
 app.listen(process.env.PORT, function () {
