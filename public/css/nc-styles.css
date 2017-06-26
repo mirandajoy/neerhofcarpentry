@@ -163,8 +163,11 @@ nav ul li a {
     margin: 0px;
 }
 
-.anchor {
-    padding-top: 60px;
+#success-message {
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    transition: top 2s ease;
 }
 
 /***** ABOUT *****/

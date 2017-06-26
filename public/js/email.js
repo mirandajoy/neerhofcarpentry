@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById(messageInputId).value = '';
 
         document.querySelector('#send-button button').innerHTML = '<i class="fa fa-check"></i> Sent';
+
+        document.getElementById('success-message').style.top = '100px';
       }
     };
     xhr.send(postBody);
