@@ -17,11 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById(emailInputId).value = '';
         document.getElementById(messageInputId).value = '';
 
-        document.querySelector('#send-button button').innerHTML = '<i class="fa fa-check"></i>';
-      } else {
-        document.querySelector('#send-button button').innerHTML = '<i class="fa fa-spinner fa-spin"></i>';
+        document.querySelector('#send-button button').innerHTML = '<i class="fa fa-check"></i> Sent';
       }
     };
-    xhr.send(postBody)
+    xhr.send(postBody);
+    document.querySelector('#send-button button').innerHTML = '<i class="fa fa-spinner fa-spin"></i>';
   });
 });
