@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById(emailInputId).value = '';
         document.getElementById(messageInputId).value = '';
 
-        document.querySelector('#send-button button').innerHTML = '<i class="fa fa-check"></i> Message sent :)';
-      } else if (xhr.readyState === XMLHttpRequest.LOADING) {
+        document.querySelector('#send-button button').innerHTML = '<i class="fa fa-check"></i>';
+      } else {
         document.querySelector('#send-button button').innerHTML = '<i class="fa fa-spinner fa-spin"></i>';
       }
     };
