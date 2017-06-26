@@ -1,0 +1,54 @@
+#testimonials {
+  padding-bottom: 30px;
+}
+.testimonial {
+  transition: visibility 0s, opacity 0.5s linear;
+  display: inline-block;
+  padding: 0;
+  margin: 70px 0 40px 0;
+}
+
+#testimonial-prev {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+#testimonial-next {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.testimonial-controls {
+  text-align: center;
+  font-size: 9px;
+  margin-bottom: 20px;
+}
+
+.testimonial-controls i:hover {
+  cursor: pointer;
+}
+
+.quote {
+  font-style: italic;
+  cursor: pointer;
+}
+
+#read-more {
+  cursor: pointer;
+  font-size: 0.7em;
+}
+
+.fa {
+  vertical-align: middle;
+}
+
+.testimonial-controls .circle {
+  font-size: 1.5em;
+  margin: 0px 5px;
+}
+
+.testimonial-controls .arrow {
+  font-size: 3.5em;
+}

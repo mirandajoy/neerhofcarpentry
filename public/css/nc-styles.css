@@ -42,6 +42,10 @@ h3 {
     font-weight: normal;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .primary-button {
     background: #327E46;
     border: none;
@@ -81,6 +85,7 @@ p {
 header {
     background: url("img/header-img.png") no-repeat right top #835031;
     background-size: cover;
+    padding-top: 60px;
 }
 
 #header-logo {
@@ -112,7 +117,28 @@ nav ul li a {
     padding: 0 15px 0 15px;
     text-decoration: none;
     list-style: none;
+}
 
+#nav {
+    position: fixed;
+    width: 100%;
+    transition: background-color 1s ease;
+}
+
+#nav h2 {
+}
+
+#nav.scrolled {
+    background-color: #3C2D1E;
+}
+
+#mobile-nav {
+  background-color: #3C2D1E;
+  opacity: 0.9;
+}
+
+#mobile-nav, #hamburger-menu {
+    display: none;
 }
 
 #maintext {
@@ -135,6 +161,10 @@ nav ul li a {
     text-align: center;
     padding: 24px 0px 107px 0px;
     margin: 0px;
+}
+
+.anchor {
+    padding-top: 60px;
 }
 
 /***** ABOUT *****/
@@ -283,7 +313,6 @@ i {
 
 .testimonial {
     padding: 70px 0;
-    width: 80%;
     margin: 0 auto;
 }
 
@@ -324,7 +353,7 @@ i {
 
 .form-label {
     font-size: 22px;
-    margin: 18px 0 5px 0;
+    /*margin: 18px 0 5px 0;*/
     font-weight: 300;
 }
 
@@ -332,15 +361,16 @@ i {
     padding-bottom: 60px;
 }
 
-#form1,
-#form2 {
-    background: white;
-    height: 48px;
+input, textarea {
+    background-color: white;
+    padding: 10px;
     width: 100%;
+    font-size: 1.4em;
+    font-family: Raleway;
+    margin-bottom: 10px;
 }
 
-#form3 {
-    background: white;
+#message-input {
     height: 176px;
     width: 100%;
 }
@@ -355,7 +385,7 @@ i {
 }
 
 #send-button {
-    padding: 20px 0 0 0;
+    padding: 10px 0 20px 20px;
     text-align: right;
 }
 
@@ -394,7 +424,7 @@ i {
 
     /* HEADER */
 
-    #home .half-width {
+    #home .half-width, #nav .half-width {
         text-align: center;
     }
 
@@ -732,3 +762,35 @@ i {
         display: block;
         padding: 5px 0;
     }
+
+    #mobile-nav {
+        text-align: center;
+    }
+
+    #mobile-nav.show {
+        display: block;
+    }
+
+    nav#mobile-nav ul li a {
+        font-size: 28px;
+    }
+
+    nav#mobile-nav ul li {
+        padding: 20px 0;
+        line-height: 20px;
+    }
+
+    h2 {
+        float: left;
+    }
+
+    #hamburger-menu {
+        display: block;
+        float: right;
+        margin: 20px 0;
+    }
+
+    #hamburger-menu:hover {
+        cursor: pointer;
+    }
+}
