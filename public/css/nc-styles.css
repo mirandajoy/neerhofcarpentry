@@ -166,7 +166,8 @@ nav ul li a {
 #success-message {
     position: fixed;
     visibility: hidden;
-    left: 10px;
+    left: 50px;
+    bottom: -100px;
     transition: bottom 2s ease;
 }
 
