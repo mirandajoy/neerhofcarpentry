@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.getElementById('success-message').style.bottom = '100px';
         document.getElementById('success-message').style.visibility = 'visible';
+
+        setTimeout(function() {
+          document.getElementById('success-message').style.bottom = '-100px';
+          document.getElementById('success-message').style.visibility = 'hidden';
+        }, 10000);
       }
     };
     xhr.send(postBody);
