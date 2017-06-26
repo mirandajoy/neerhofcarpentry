@@ -164,9 +164,9 @@ nav ul li a {
 }
 
 #success-message {
-    position: absolute;
-    top: -50px;
-    right: 10px;
+    position: fixed;
+    visibility: hidden;
+    left: 10px;
     transition: top 2s ease;
 }
 
