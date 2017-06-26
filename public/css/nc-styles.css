@@ -167,7 +167,7 @@ nav ul li a {
     position: fixed;
     visibility: hidden;
     left: 10px;
-    transition: top 2s ease;
+    transition: bottom 2s ease;
 }
 
 /***** ABOUT *****/
