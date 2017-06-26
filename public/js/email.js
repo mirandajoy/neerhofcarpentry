@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.querySelector('#send-button button').innerHTML = '<i class="fa fa-check"></i> Sent';
 
-        document.getElementById('success-message').style.bottom = '100px';
+        document.getElementById('success-message').style.bottom = '50px';
 
         setTimeout(function() {
           document.getElementById('success-message').style.bottom = '-100px';
