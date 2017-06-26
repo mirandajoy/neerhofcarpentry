@@ -23,6 +23,7 @@ app.post('/send-email', function(req, res) {
     method: 'POST', path: '/v3/mail/send', body: mail.toJSON()
   }), function (error, response) {
     if (error) {
+      console.log(error);
       res.status(400).send()
     } else {
       res.status(200).send()
@@ -30,6 +31,6 @@ app.post('/send-email', function(req, res) {
   })
 })
 
-app.listen(process.env.PORT, function () {
-  console.log('Listening on port 3000!')
+app.listen(process.env.PORT || 3000, function () {
+  console.log(`Listening on port ${process.env.PORT || 3000}!`)
 })

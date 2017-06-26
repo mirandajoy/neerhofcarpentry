@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById(nameInputId).value = '';
         document.getElementById(emailInputId).value = '';
         document.getElementById(messageInputId).value = '';
+
+        document.querySelector('#send-button button').innerHTML = '<i class="fa fa-spinner fa-spin></i>';
       }
     };
     xhr.send(postBody)
