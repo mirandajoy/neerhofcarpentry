@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
         document.getElementById(nameInputId).value = '';
         document.getElementById(emailInputId).value = '';
-        document.getElementById(messageInput).value = '';
+        document.getElementById(messageInputId).value = '';
       }
     };
     xhr.send(postBody)
