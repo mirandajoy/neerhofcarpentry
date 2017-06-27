@@ -85,7 +85,6 @@ p {
 header {
     background: url("img/header-img.png") no-repeat right top #835031;
     background-size: cover;
-    padding-top: 60px;
 }
 
 #header-logo {
@@ -123,9 +122,6 @@ nav ul li a {
     position: fixed;
     width: 100%;
     transition: background-color 1s ease;
-}
-
-#nav h2 {
 }
 
 #nav.scrolled {

@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+  var navHeight;
+
+  setScrollOffset();
+
   document.getElementById('hamburger-menu').addEventListener('click', function() {
     document.getElementById('mobile-nav').classList.toggle('show');
     document.querySelector('#hamburger-menu i').classList.toggle('fa-bars');
@@ -17,7 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var hash = window.location.hash;
 
 		var target = document.getElementById( hash.slice(1) );
-		window.scrollBy(0, -60);
+		window.scrollBy(0, -navHeight);
+  });
+
+  window.addEventListener('resize', function() {
+    setScrollOffset();
   });
 
   document.addEventListener('scroll', function() {
@@ -27,4 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('nav').classList.remove('scrolled');
     }
   });
+
+  function setScrollOffset() {
+    navHeight = document.getElementById('nav').offsetHeight;
+    document.getElementById('home').setAttribute('style', 'padding-top: ' + navHeight + 'px;');
+  }
 });
