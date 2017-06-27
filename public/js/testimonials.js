@@ -94,7 +94,7 @@ var expanded = false;
 var testimonials = [
   {
     quote: 'Ed took the time to patiently and professionally cover every surface of the deck . . . I highly recommend his expertise as a skilled and conscientious craftsman . . .',
-    quoteFull: "I hired Ed Neerhof (County Craftsman) to refresh the deck at the back of our residence. The years had eliminatedthe water repellency leaving irritating slivers and discolour. Ed took the time to patiently and professionally cover every surface of the deck. It now gleams in the sunshine and causes water to bead when it rains. He had previously constructed a rail fence for us at the front of our property. I highly recommend his expertise as a skilled and conscientious craftsman.",
+    quoteFull: "I hired Ed Neerhof (County Craftsman) to refresh the deck at the back of our residence. The years had eliminated the water repellency leaving irritating slivers and discolour. Ed took the time to patiently and professionally cover every surface of the deck. It now gleams in the sunshine and causes water to bead when it rains. He had previously constructed a rail fence for us at the front of our property. I highly recommend his expertise as a skilled and conscientious craftsman.",
     name: "-- Kent Kirkland, Trenton"
   },
   {
@@ -104,7 +104,7 @@ var testimonials = [
   },
   {
     quote: ". . . Ed helped us turn an unappealing, cold, slap-together bedroom into a warm, welcoming wooden haven . . . We are sure anyone who gets a job done by Ed will be extremely satisfied. We always are!",
-    quoteFull: "We live in an old red brick farmhouse that needs a professional touch when renovations or maintenance isrequired. Because of our past experience with Ed Neerhof, we naturally turn to him first when contemplating additional work. Several years ago Ed helped us turn an unappealing, cold, slap-together bedroom into a warm, welcoming wooden haven. Ed's care and craftsmanship were outstanding: it was a source of pride and pleasure to show the new room tovisitors. And our son has made the bedroom his home. Recently Ed did several maintenance jobs in and around the house. Asalways, his work was meticulous. Again, it pleased us to show others his work. He fits together old with new in seamless tradition. For further jobs, we will look to Ed again. His professional, exemplary work is a testament to his character. We are sure anyone who gets a job done by Ed will be extremely satisfied. We always are!",
-    name: "-- Kent Kirkland, Trenton",
+    quoteFull: "We live in an old red brick farmhouse that needs a professional touch when renovations or maintenance is required. Because of our past experience with Ed Neerhof, we naturally turn to him first when contemplating additional work. Several years ago Ed helped us turn an unappealing, cold, slap-together bedroom into a warm, welcoming wooden haven. Ed's care and craftsmanship were outstanding: it was a source of pride and pleasure to show the new room tovisitors. And our son has made the bedroom his home. Recently Ed did several maintenance jobs in and around the house. As always, his work was meticulous. Again, it pleased us to show others his work. He fits together old with new in seamless tradition. For further jobs, we will look to Ed again. His professional, exemplary work is a testament to his character. We are sure anyone who gets a job done by Ed will be extremely satisfied. We always are!",
+    name: "-- Herman and Marianne Prinzen, Prince Edward County",
   }
 ];
