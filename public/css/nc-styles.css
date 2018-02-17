@@ -330,6 +330,68 @@ i {
     margin: 0;
 }
 
+/***** GALLERY *****/
+
+#gallery {
+    margin-bottom: 80px;
+}
+
+.gallery-content {
+    column-count: 3;
+    column-gap: 5px;
+    line-height: 0;
+    margin-top: 28px;
+}
+
+.img {
+    max-width: 100%;
+}
+
+.container {
+    margin: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.container:first-child {
+    margin-top: 0px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #3C2D1E;
+}
+  
+.container:hover .overlay {
+    opacity: 0.8;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    line-height: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 /***** CONTACT *****/
 
 #contact {
@@ -509,6 +571,13 @@ input, textarea {
     #cta-buttons-set2 {
         padding: 20px 0 64px 0;
     }
+
+    /* GALLERY */
+
+    .gallery-content {
+        column-count: 2;
+    }
+
 }
 
 /***** MOBILE LANDSCAPE *****/
@@ -701,6 +770,12 @@ input, textarea {
         width: 100%;
         padding: 0px;
         margin: 0px;
+    }
+
+    /* GALLERY */
+    
+    .gallery-content {
+        column-count: 1;
     }
 
     /* CONTACT */
